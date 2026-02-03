@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/romantic-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Page 1: The Question -->
+    <div id="page1" class="page active">
+        <div class="floating-hearts"></div>
+        <div class="content-wrapper">
+            <img src="assets/images/couple.png" alt="Cute Couple" class="main-image">
+            <h1 class="question">Will You Be My Valentine? 💖</h1>
+            <div class="button-container">
+                <button id="yesBtn" class="btn yes-btn">Yes! 💕</button>
+                <button id="noBtn" class="btn no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Pickup Lines -->
+    <div id="page2" class="page">
+        <div class="floating-hearts"></div>
+        <div class="content-wrapper">
+            <h1 class="page-title">Here's Why You Made The Right Choice 😊</h1>
+            <div class="pickup-lines-container">
+                <div class="pickup-line">
+                    <p class="line-text"></p>
+                </div>
+            </div>
+            <button id="nextToGifts" class="btn continue-btn">Continue 💝</button>
+        </div>
+    </div>
+
+    <!-- Page 3: Gift Boxes -->
+    <div id="page3" class="page">
+        <div class="floating-hearts"></div>
+        <div class="content-wrapper">
+            <h1 class="page-title">Choose Your Gift 🎁</h1>
+            <p class="subtitle">Click on any gift box to reveal a special message</p>
+            <div class="gift-boxes-container">
+                <div class="gift-box" data-gift="1">
+                    <div class="box-wrap">
+                        <div class="box-top">🎀</div>
+                        <div class="box-bottom">🎁</div>
+                    </div>
+                </div>
+                <div class="gift-box" data-gift="2">
+                    <div class="box-wrap">
+                        <div class="box-top">🎀</div>
+                        <div class="box-bottom">🎁</div>
+                    </div>
+                </div>
+                <div class="gift-box" data-gift="3">
+                    <div class="box-wrap">
+                        <div class="box-top">🎀</div>
+                        <div class="box-bottom">🎁</div>
+                    </div>
+                </div>
+            </div>
+            <button id="nextToPhotos" class="btn continue-btn" style="display: none;">See Our Memories 📸</button>
+        </div>
+    </div>
+
+    <!-- Gift Letter Modal -->
+    <div id="letterModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="letter-container">
+                <h2 class="letter-title">Love Letter</h2>
+                <div class="letter-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Photo Gallery -->
+    <div id="page4" class="page">
+        <div class="floating-hearts"></div>
+        <div class="content-wrapper">
+            <h1 class="page-title">Our Beautiful Moments Together 💑</h1>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="assets/images/photo1.jpg" alt="Memory 1">
+                    <p class="photo-caption">You & Me</p>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/photo2.jpg" alt="Memory 2">
+                    <p class="photo-caption">Making Memories</p>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/photo3.jpg" alt="Memory 3">
+                    <p class="photo-caption">Together Forever</p>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/photo4.jpg" alt="Memory 4">
+                    <p class="photo-caption">You will always be my Favorite</p>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/photo5.jpg" alt="Memory 5">
+                    <p class="photo-caption">Always & Forever</p>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/photo6.jpg" alt="Memory 6">
+                    <p class="photo-caption">Love You More</p>
+                </div>
+            </div>
+            <div class="final-message">
+                <h2>I Love You! ❤️</h2>
+                <p>Happy Valentine's Day, my love! 💕</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
